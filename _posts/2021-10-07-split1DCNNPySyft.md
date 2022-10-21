@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Detecting Heart Abnormalities using 1D CNN on data you cannot see
-author: Khoa Nguyen
+title: "Detecting Heart Abnormalities using 1D CNN on Data You Cannot See"
+# summary: 
+author: khoaguin
 date: '2021-10-07'
 category: ['private-secure-ai']
-tags: priv-sec-ai
 usemathjax: true
-# mermaid: true
-thumbnail: /assets/img/posts/code.jpg
+keywords: pysyft, private and secure ai 
+thumbnail: /assets/img/posts/heartbeat.jpg
 permalink: /blog/detect-heart-abnormalities-1d-cnn-pysyft
 ---
 _Preserve sensitive training data privacy with split neural network and PySyft_
