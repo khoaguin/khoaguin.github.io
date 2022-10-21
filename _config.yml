@@ -1,7 +1,7 @@
 title: I am Khoa
 subtitle: "->"
 description: >- # this means to ignore newlines until "baseurl:"
-  I am passionate about building privacy-preserving medical AI applications
+  # I am passionate about building privacy-preserving medical AI applications
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -41,13 +41,13 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Centre for Immersive Visual Technologies Lab (CIVIT)
+            - company_name: Centre for Immersive Visual Technologies (CIVIT)
               company_logo: civit.png
               company_url: https://civit.fi
               designation: Research Assistant
               # description: Worked on various Google Products
               visibility: true
-            - company_name: Network and Information Security Lab (NISEC)
+            - company_name: Network and Information Security Research Group (NISEC)
               company_logo: nisec.jpg
               company_url: https://research.tuni.fi/nisec/
               designation: Researcher
