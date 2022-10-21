@@ -7,10 +7,11 @@ category: ['private-secure-ai']
 keywords: ppml, resource-materials
 usemathjax: true
 thumbnail: /assets/img/posts/hello.jpg
+permalink: /blog/ppml-resources-materials
 ---
 # About  
 This is a compiled list of resources and materials for PPML.  
-
+<a href="https://github.com/khoaguin/ppml-materials" target="_blank">Here</a> is the link to the github repo, enjoy! And please leave a <a class="github-button" href="https://github.com/khoaguin/ppml-materials" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a> if you find it useful.
 # Survey Papers
 
 1. [Arxiv’20] [Privacy in Deep Learning: A Survey](https://www.researchgate.net/publication/340963602_Privacy_in_Deep_Learning_A_Survey)

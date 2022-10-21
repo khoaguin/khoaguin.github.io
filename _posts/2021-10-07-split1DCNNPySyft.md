@@ -15,7 +15,7 @@ _Preserve sensitive training data privacy with split neural network and PySyft_
 ## TL;DR:
 We apply the split learning architecture to train a 1D CNN model on heartbeat data and accurately detect heart abnormalities while preserving data privacy
 ### Well, that’s still too long, and words are cheap, just show me the code!
-<a href="https://github.com/khoaguin/priv-sec-ai-blog/blob/master/ecg-split-1DCNN-PySyft/ecg-split-1DCNN.ipynb" target="_blank">Here</a> you go. Enjoy!
+<a href="https://github.com/khoaguin/priv-sec-ai-blog/blob/master/ecg-split-1DCNN-PySyft/ecg-split-1DCNN.ipynb" target="_blank">Here</a> you go, enjoy! And please leave a <a class="github-button" href="https://github.com/khoaguin/priv-sec-ai-blog/blob/master/ecg-split-1DCNN-PySyft/" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true">Star</a> if you find it useful.
 
 Also, if you prefer to read on Medium and give some claps for encouragement, <a href="https://encryptedlearner.com/detecting-heart-abnormalities-using-1d-cnn-on-data-you-cannot-see-with-pysyft-735481a952d8" target="_blank">here</a> is the link.
 ## Introduction
