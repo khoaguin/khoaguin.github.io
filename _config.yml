@@ -35,7 +35,7 @@ This blog is where I share my learning journey and other passions in life.
 In my free time, I enjoy training boxing and calisthenics, playing guitar, reading, writing..."
 author_email: "dkn.work@protonmail.com"
 author_location: Vietnam and Finland
-author_website_url: "https://khoaduynguyen.com"
+# author_website_url: "https://khoaduynguyen.com"
 typewrite-text: I am passionate about building privacy-preserving medical AI applications
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
@@ -65,17 +65,15 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: projects/django-social-network.png
+                project_title: Django Social Network
+                project_description: A Simple Social Network Built with Django
+                project_url: https://bwa-project.herokuapp.com/
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: projects/obj-det-loc.png
+                project_title: Custom Ojbect Detection & Localization
+                project_url: https://github.com/DK-Nguyen/custom-object-detection-and-3d-localization
                 visibility: true
-
 # social links
 # twitter_username: johndoe
 github_username:  khoaguin
@@ -94,14 +92,14 @@ medium_username: khoaguin
 # hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-# wakatime_username: sujaykundu777
+wakatime_username: khoaguin
 
 # mailchimp embedded form url (newsletter):
 # mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
-# contact form - (choose formspress or getform)
+  # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
+formspree_email: dkn.work@protonmail.com
 
 # releases - widget can be (sidebar, modal or embed)
 olvy_organization: devlopr
