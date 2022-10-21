@@ -1,7 +1,7 @@
 ---
 name: Khoa Nguyen
 username: khoaguin
-bio: "Full-stack Deep Learning Engineer. Privacy-preserving Medical AI Researcher"
+bio: "Full-stack Deep Learning Engineer. Privacy-preserving Medical AI Researcher. I am based in Vietnam and Finland"
 site: https://khoaduynguyen.com
 avatar: khoa.png
 email: dkn.work@protonmail.com
