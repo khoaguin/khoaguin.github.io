@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AI in Health and Medicine
+title: AI in Health & Medicine
 author: khoaguin
 date: '2022-10-24'
-category: ['medical-ai']
+category: ['medical-ai', 'paper-summarization']
 keywords: ppml, paper-summarization
 usemathjax: true
-thumbnail: /assets/img/posts/ppml.jpg
+thumbnail: /assets/img/posts/ai-in-heath-medicine/banner.jpg
 permalink: /blog/ai-in-healthcare-medicine
 ---
 # AI in Health & Medicine
