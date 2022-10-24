@@ -16,6 +16,10 @@ Hi, in this post, I summarize the paper [AI in health and medicine](https://www.
 
 The paper summarizes findings around the progresses in medical AI that have been made in the past 2 years (2020-2022). These findings are gathered and shared via the weekly medical AI newsletter at [https://doctorpenguin.com](https://doctorpenguin.com/). It highlights promising avenues for new progresses such as novel data sources and human-AI collaboration. It discusses challenges facing the field, including technical limitations, building ethical systems, holding people accountability when AI errors occur, respecting patent privacy, and safeguarding against data preach.
 
+## Why?
+
+Artificial intelligence (AI) has a potential to broadly reshape medicine and improve the experiences of both clinicians and patients.
+
 ## What?
 
 ### Overview of progress, challenges and opportunities for AI in healthcare
@@ -57,10 +61,6 @@ The paper summarizes findings around the progresses in medical AI that have been
     | ![space-1.jpg](/assets/img/posts/ai-in-heath-medicine/4.png) |
     |:--:|
     | *Figure from the paper*|
-
-## Why?
-
-Artificial intelligence (AI) has a potential to broadly reshape medicine and improve the experiences of both clinicians and patients.
 
 ## Other Comments
 
