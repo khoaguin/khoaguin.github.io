@@ -87,7 +87,9 @@ class ECG(Dataset):
 ```
 The post-processing dataset consists of 26 490 heartbeat samples in total, each one is a time-series vector of length 128. There are 5 different types of heartbeats as classification targets: normal beat (class 0), left bundle branch block (class 1), right bundle branch block (class 2), atrial premature contraction (class 3), ventricular premature contraction (class 4). We can see an example of each class in Figure 1 below.
 
-![](https://live.staticflickr.com/65535/51561872348_4b01d06389_w.jpg){: width="972" height="589" style="max-width: 50%"}*Figure 1: the ECG dataset*
+![](https://live.staticflickr.com/65535/51561872348_4b01d06389_w.jpg){: width="972" height="589" style="max-width: 50%"}
+
+*Figure 1: the ECG dataset*
 
 The client then loads the datasets and saves them into `.pt` files and sends them to the server, using the code below.
 ```python
@@ -122,7 +124,10 @@ for i, b in enumerate(train_rdl_ptr):
 ```
 Using the code above, we would get `X` and `y` as pointers to the corresponding torch Tensors, but not the real tensors themselves, like in the figure below.
 
-![](https://live.staticflickr.com/65535/51562317134_03b1f02085_c.jpg){: width="800" height="242" style="max-width: 90%"}*Figure 2: output when looping through the remote data loader.*
+![](https://live.staticflickr.com/65535/51562317134_03b1f02085_c.jpg){: width="800" height="242" style="max-width: 90%"}
+
+*Figure 2: output when looping through the remote data loader.*
+
 The server can request to access the tensors by using `X.get()` or `X.get_copy()`, but this needs to be accepted by the client. Here, we assume that the client accepts all requests from the server for convenience. However, we will see in the training loop later that the client will never request to get access to the training input data. Furthermore, as we only loaded 50 examples, and the batch size is 32, there are only two batches, one with 32 samples, and one with 18 samples.
 Similarly, the server makes the remote dataset and data loader for the test dataset.
 ```python
@@ -137,10 +142,15 @@ test_rdl_ptr.create_dataloader()
 ### Server: defining the split neural network architecture to train on the ECG dataset
 Figure 3 below shows the architecture of the 1D CNN neural network used to train on the ECG dataset. The model on the client side contains two 1D convolution layers (we will learn about it more later) with Leaky Relu activation functions. Each conv layer is followed by a 1D Max Pooling operation. The server’s model contains two fully connected layers, followed by a softmax activation function. The loss function used is the cross-entropy loss.
 
-![](https://live.staticflickr.com/65535/51562317124_43ed07fd3c_c.jpg){: width="661" height="800" style="max-width: 90%"}*Figure 3: the split learning model architecture.*
+![](https://live.staticflickr.com/65535/51562317124_43ed07fd3c_c.jpg){: width="661" height="800" style="max-width: 90%"}
+
+*Figure 3: the split learning model architecture.*
+
 Let’s learn a bit about the 1D convolution layer. It is simply a method that slides a weight kernel along one dimension. Figure 4 shows the 1D convolution vs. 2D convolution operation. 1D convolution is suitable for 1D data, such as time series that we have in the ECG signals. If you want to learn more about 1D, 2D and 3D convolution, <a href="https://towardsdatascience.com/understanding-1d-and-3d-convolution-neural-network-keras-9d8f76e29610" target="_blank">this blog post</a> offers very clear explanations.
 
-![](https://live.staticflickr.com/65535/51561872338_45589f4fc2.jpg){: width="500" height="279" style="max-width: 90%"}*Figure 4: 1D Convolution layer vs 2D Convolution layer*
+![](https://live.staticflickr.com/65535/51561872338_45589f4fc2.jpg){: width="500" height="279" style="max-width: 90%"}
+
+*Figure 4: 1D Convolution layer vs 2D Convolution layer*
 
 Now we can move on and define the neural network models on the client side with the code below. It is a class that inherits from `syft.Module`. Note that in line number 3, we have `torch_ref` as an argument in the constructor, which we will pass `remote_torch` into later. All the layers are constructed using this `torch_ref` module.
 ```python
@@ -300,13 +310,19 @@ In the backward pass, the server starts the backpropagation until the split laye
 
 In the testing loop for each epoch, we only need to do the forward pass and calculate the testing losses.
 
-![](https://live.staticflickr.com/65535/51562551870_20ea5fbe80.jpg){: width="500" height="420" style="max-width: 90%"}*Figure 5: the result of the training and testing loop*
+![](https://live.staticflickr.com/65535/51562551870_20ea5fbe80.jpg){: width="500" height="420" style="max-width: 90%"}
+
+*Figure 5: the result of the training and testing loop*
 
 Finally, after 400 epochs are over, we can print out the best test accuracy and plot the training/testing losses and accuracies, like in Figure 6 and 7. As we can see, the split learning 1D CNN method can achieve 98.85% accuracy on the test dataset after 351 epochs. Not bad at all.
 
-![](https://live.staticflickr.com/65535/51561872278_75c29983ec_b.jpg){: width="1024" height="153" style="max-width: 90%"}*Figure 6: printing out the best test accuracy*
+![](https://live.staticflickr.com/65535/51561872278_75c29983ec_b.jpg){: width="1024" height="153" style="max-width: 90%"}
 
-![](https://live.staticflickr.com/65535/51561872188_c59bd11230_b.jpg){: width="1000" height="308" style="max-width: 90%"}*Figure 7: training/testing losses and accuracies*
+*Figure 6: printing out the best test accuracy*
+
+![](https://live.staticflickr.com/65535/51561872188_c59bd11230_b.jpg){: width="1000" height="308" style="max-width: 90%"}
+
+*Figure 7: training/testing losses and accuracies*
 
 ## Drawbacks and Future Directions
 While the split learning method achieves promising results, there are several problems to be addressed. Firstly, the server still needs to access the ground truth output data to calculate the loss. To solve this problem, we can use the U-shaped split learning configuration[^3]. Secondly, the activation maps sent from the client to the server can still leak information about the input training data. The authors from[^1] have experimented with differential privacy to solve this problem, however, it hinders greatly the accuracies of the algorithm. Thirdly, the time needed to train the split network using PySyft is very long, almost 14 hours on Intel Xeon CPU 2.60GHz and 6 cores. Training the same network locally with GPU only takes a few minutes. For now, PySyft has not supported training on GPU. Tackling these problems will be the focus of future works.
