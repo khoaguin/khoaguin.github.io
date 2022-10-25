@@ -26,15 +26,15 @@ urls:
 
 author_logo: khoa.png
 author: Khoa
-author_bio: "Hi, my name is Khoa. Currently, I am working as a project researcher at the Network & Information 
+author_bio: "Hi, my name is Khoa. Currently, I am working as a researcher at the Network & Information 
 Security Research Group, Tampere University, Finland under supervision of Prof. Antonios Michalas. 
 I graduated with my bachelor and master degree from the Computing Sciences department also at Tampere University. 
 During my bachelor study, I worked as a research assistant at the CIVIT lab under supervision of Prof. Atanas Gotchev. \n
-I am passionate about building privacy-preserving AI applications for healthcare. 
+I am passionate about building privacy-preserving AI applications for healthcare and medicine. 
 This blog is where I share my learning journey and other passions in life. 
 In my free time, I enjoy training boxing and calisthenics, playing guitar, reading, writing..."
 author_email: "dkn.work@protonmail.com"
-author_location: Vietnam and Finland
+author_location: I am a cyberghost 👻
 # author_website_url: "https://khoaduynguyen.com"
 typewrite-text: I am passionate about building privacy-preserving medical AI applications
 hero_cover_img: ai-banner.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
@@ -62,6 +62,19 @@ author_education_details:
                 college_degree: Machine Learning and Cyber Security
                 description: Master of Technology
                 visibility: true
+              - college_logo: tuni.png
+                college_name: Tampere University
+                college_url: https://tuni.fi
+                college_degree: Information Technology
+                description: Bachelor of Science and Technology
+                visibility: true
+              - college_logo: HCMCUT.png
+                college_name: Ho Chi Minh City University of Technology
+                college_url: https://oisp.hcmut.edu.vn/en/
+                college_degree: Electrical Engineering
+                description: Bachelor of Engineering --
+                             I dropped out to pursue my dream of studing abroad
+                visibility: true
 
 # Projects
 author_project_details:
@@ -74,6 +87,7 @@ author_project_details:
                 project_title: Custom Ojbect Detection & Localization
                 project_url: https://github.com/DK-Nguyen/custom-object-detection-and-3d-localization
                 visibility: true
+
 # social links
 # twitter_username: johndoe
 github_username:  khoaguin
@@ -113,7 +127,7 @@ permalink: pretty
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+# show_author_project_details: true
 
 # pagination of posts
 paginate: 4
