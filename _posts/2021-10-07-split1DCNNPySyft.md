@@ -4,7 +4,7 @@ title: "Detecting Heart Abnormalities using 1D CNN on Data You Cannot See"
 # summary: 
 author: khoaguin
 date: '2021-10-07'
-category: ['private-secure-ai']
+category: ['private-secure-ai', 'medical-ai']
 usemathjax: true
 keywords: pysyft, private and secure ai 
 thumbnail: /assets/img/posts/heartbeat.jpg

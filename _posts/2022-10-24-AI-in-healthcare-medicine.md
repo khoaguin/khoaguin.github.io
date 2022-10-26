@@ -7,7 +7,8 @@ category: ['paper-summarization', 'medical-ai']
 keywords: ppml, paper-summarization
 usemathjax: true
 thumbnail: /assets/img/posts/ai-in-heath-medicine/banner.jpg
-permalink: /blog/ai-in-healthcare-medicine 
+permalink: /blog/ai-in-healthcare-medicine
+published: false 
 ---
 # AI in Health & Medicine
 Hi, in this post, I summarize the paper [AI in health and medicine](https://www.nature.com/articles/s41591-021-01614-0) written by Pranav Rajpurkar, Emma Chen, Oishi Banerjee & Eric J. Topol. The paper is published at the Nature Medicine journal on January, 2022.
