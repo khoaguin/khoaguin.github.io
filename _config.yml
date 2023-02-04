@@ -27,9 +27,9 @@ urls:
 author_logo: khoa.png
 author: Khoa
 author_bio: "Hi, my name is Khoa. Currently, I am working as a researcher at the Network & Information 
-Security Research Group, Tampere University, Finland under supervision of Prof. Antonios Michalas. 
+Security Research Group, Tampere University, Finland under supervision of Prof. Antonios Michalas and a software engineer intern at OpenMined.
 I graduated with my bachelor and master degree from the Computing Sciences department also at Tampere University. 
-During my bachelor study, I worked as a research assistant at the CIVIT lab under supervision of Prof. Atanas Gotchev. \n
+During my bachelor study, I worked as a research assistant at the the centre for immersive visual technologies (CIVIT) under supervision of Prof. Atanas Gotchev. \n
 I am passionate about building privacy-preserving AI applications for healthcare and medicine. 
 This blog is where I share my learning journey and other passions in life. 
 In my free time, I enjoy training boxing and calisthenics, playing guitar, reading, writing..."
@@ -96,13 +96,14 @@ author_project_details:
                 visibility: true
 
 # social links
-# twitter_username: johndoe
 github_username:  khoaguin
-# facebook_username: johndoe
 linkedin_username: khoa-duy-nguyen
+medium_username: khoaguin
+google_scholar_username: 9Cx8YUIAAAAJ
+# twitter_username: johndoe
+# facebook_username: johndoe
 # behance_username: johndoe
 # instagram_username: johndoe
-medium_username: khoaguin
 # telegram_username: johndoe
 # dribbble_username: johndoe
 # flickr_username: johndoe
