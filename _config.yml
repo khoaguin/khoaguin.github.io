@@ -41,17 +41,23 @@ hero_cover_img: ai-banner.jpg # replace this for changing homepage cover (eg. tr
 
 # Experiences
 author_work_experiences:
+            - company_name: OpenMined
+              company_logo: openmined.png
+              company_url: https://www.openmined.org/
+              designation: Software Engineer Intern
+              description: Accepted into the OpenMined Padawan program (https://blog.openmined.org/tag/padawan-program/) to learn and contribute to PySyft - a privacy-preserving deep learning framework
+              visibility: true
             - company_name: Network and Information Security Research Group (NISEC)
               company_logo: nisec.jpg
               company_url: https://research.tuni.fi/nisec/
               designation: Researcher
-              # description: Worked on various Azure Cloud Products
+              description: Working on privacy-preserving AI applications for healthcare and medicine
               visibility: true
             - company_name: Centre for Immersive Visual Technologies (CIVIT)
               company_logo: civit.png
               company_url: https://civit.fi
               designation: Research Assistant
-              # description: Worked on various Google Products
+              description: Working on AI applications into object detection and localization
               visibility: true
 
 # Education
@@ -78,14 +84,15 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: projects/django-social-network.png
-                project_title: Django Social Network
-                project_description: A Simple Social Network Built with Django
-                project_url: https://bwa-project.herokuapp.com/
+              - project_thumbnail: projects/harpocrates.png
+                project_title: HARPOCRATES
+                project_description: Designing practical cryptographic schemes for analysing data in a privacy-preserving way 
+                project_url: https://harpocrates-project.eu/
                 visibility: true
-              - project_thumbnail: projects/obj-det-loc.png
-                project_title: Custom Ojbect Detection & Localization
-                project_url: https://github.com/DK-Nguyen/custom-object-detection-and-3d-localization
+              - project_thumbnail: projects/pysyft.png
+                project_title: PySyft
+                project_description: Data science on data without acquiring a copy
+                project_url: https://github.com/OpenMined/PySyft
                 visibility: true
 
 # social links
@@ -127,7 +134,7 @@ permalink: pretty
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-# show_author_project_details: true
+show_author_project_details: true
 
 # pagination of posts
 paginate: 4
