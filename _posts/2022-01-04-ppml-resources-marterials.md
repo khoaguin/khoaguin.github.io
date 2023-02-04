@@ -3,6 +3,7 @@ layout: post
 title: Privacy Preserving Machine Learning - Resources & Materials
 author: khoaguin
 date: '2022-01-04'
+summary: A compiled list of resources and materials for PPML.
 category: ['private-secure-ai']
 keywords: ppml, resource-materials
 usemathjax: true
