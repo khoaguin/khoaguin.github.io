@@ -65,19 +65,19 @@ author_education_details:
               - college_logo: tuni.png
                 college_name: Tampere University, Finland
                 college_url: https://tuni.fi
-                college_degree: Master of  Machine Learning and Cyber Security
+                college_degree: Master's Degree in Machine Learning and Cyber Security
                 description: Full Tuition Scholarship. Graduate with Distinction
                 visibility: true
               - college_logo: tuni.png
                 college_name: Tampere University, Finland
                 college_url: https://tuni.fi
-                college_degree: Bachelor of Information Technology
+                college_degree: Bachelor's Degree in Information Technology
                 description: Full Tuition Scholarship
                 visibility: true
               - college_logo: HCMCUT.png
                 college_name: Ho Chi Minh City University of Technology, Vietnam
                 college_url: https://oisp.hcmut.edu.vn/en/
-                college_degree: Bachelor of Electrical Engineering
+                college_degree: Bachelor's Degree in Electrical Engineering
                 description:  Dropped out to pursue my dream of studing abroad
                 visibility: true
 
