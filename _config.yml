@@ -57,7 +57,7 @@ author_work_experiences:
               company_logo: civit.png
               company_url: https://civit.fi
               designation: Research Assistant
-              description: Working on AI applications into object detection and localization
+              description: Working on AI applications for object detection and localization
               visibility: true
 
 # Education
