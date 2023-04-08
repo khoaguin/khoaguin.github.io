@@ -44,13 +44,13 @@ author_work_experiences:
             - company_name: OpenMined
               company_logo: openmined.png
               company_url: https://www.openmined.org/
-              designation: Software Engineer Intern (Fully Remote)
-              description: Accepted into the OpenMined Padawan program (https://blog.openmined.org/tag/padawan-program/) to learn and contribute to PySyft - a privacy-preserving deep learning framework
+              designation: Software Engineer (Fully Remote)
+              description: Working as a core software engineer on PySyft, helping to plan, execute, test, and document functionality central to the library
               visibility: true
             - company_name: Network and Information Security Research Group (NISEC)
               company_logo: nisec.jpg
               company_url: https://research.tuni.fi/nisec/
-              designation: Researcher
+              designation: Researcher (Fully Remote)
               description: Working on privacy-preserving AI applications for healthcare and medicine
               visibility: true
             - company_name: Centre for Immersive Visual Technologies (CIVIT)
