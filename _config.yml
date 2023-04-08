@@ -45,7 +45,8 @@ author_work_experiences:
               company_logo: openmined.png
               company_url: https://www.openmined.org/
               designation: Software Engineer (Fully Remote)
-              description: Working as a core software engineer on PySyft, helping to plan, execute, test, and document functionality central to the library
+              description: Working as a core software engineer on PySyft, a privacy-preserving machine learning framework. 
+                          Helping to plan, execute, test, and document functionality central to the library
               visibility: true
             - company_name: Network and Information Security Research Group (NISEC)
               company_logo: nisec.jpg
